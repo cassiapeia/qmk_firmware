@@ -46,11 +46,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
     false \
 )
 
+#ifdef OLED_ENABLE
+  #define OLED_DISPLAY_128X64
+  #define OLED_TIMEOUT 300000
+#endif
 
+/* Not using RBG at the moment */
 #ifdef RGBLIGHT_ENABLE
-#define RGB_DI_PIN D3
-#define RGBLIGHT_ANIMATIONS
-#define RGBLED_NUM 8
+    #define RGB_DI_PIN D3
+    #define RGBLIGHT_ANIMATIONS
+    #define RGBLED_NUM 8
 #endif
 
 #endif
