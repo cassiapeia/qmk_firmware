@@ -188,14 +188,10 @@ static void test_bongo(void) {
 }
 
 void oled_task_user(void) {
-    if (is_keyboard_master()) {
-        // do whatever you want on the master side
-    }
-    else {
-        render_logo();
-    }
+    render_logo();
+    return false;
 }
-#endif /*
+/*
     
 /* TEST CODE 1
 #define IDLE_FRAMES 2
