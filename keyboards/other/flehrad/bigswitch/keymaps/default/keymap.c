@@ -28,6 +28,12 @@ LAYOUT(SLEEP_OSX),
 #define ANIM_NUM_FRAMES 2 //the number of frames in the animation
 #define ANIM_FRAME_DURATION 100 // how long each frame lasts 
 
+#ifdef ANIM_REVERSE
+#define ANIM_TOTAL_FRAMES (2*((ANIM_NUM_FRAMES)-1))
+#else
+#define ANIM_TOTAL_FRAMES ANIM_NUM_FRAMES
+#endif
+
 uint16_t anim_timer = 0;
 uint8_t current_anim_frame = 0;
 
