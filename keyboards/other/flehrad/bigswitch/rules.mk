@@ -28,3 +28,4 @@ RGBLIGHT_ENABLE  	= no 	# This can be enabled if a ws2812 strip is connected to 
 
 OLED_ENABLE 		= yes   # Enables the use of OLED displays
 OLED_DRIVER 		= SSD1306
+OLED_TRANSPORT 		= i2c
