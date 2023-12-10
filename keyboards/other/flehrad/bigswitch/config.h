@@ -49,7 +49,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #ifdef OLED_ENABLE
   #define OLED_DISPLAY_128X64
   #define OLED_TIMEOUT 300000
-  #define OLED_DISPLAY_ADDRESS 0x3D
+  #define OLED_DISPLAY_ADDRESS 0x3C
 #endif
 
 /* Not using RBG at the moment */
