@@ -41,6 +41,10 @@ LAYOUT(SLEEP_OSX),
 uint16_t anim_timer = 0;
 uint8_t current_anim_frame = 0;
 
+oled_rotation_t oled_init_user(oled_rotation_t rotation) {
+    return OLED_ROTATION_180;
+}
+
 static void test_bongo(void) {
     static const char PROGMEM frame0_rightpat[ANIM_NUM_FRAMES][1024] = {
     {
@@ -188,7 +192,7 @@ static void test_bongo(void) {
 }
 
 void oled_task_user(void) {
-    render_logo();
+    test_bongo();
     return false;
 }
 /*
