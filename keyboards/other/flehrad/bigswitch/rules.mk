@@ -10,7 +10,7 @@ MCU = atmega32u4
 #   QMK DFU      qmk-dfu
 #   ATmega32A    bootloadHID
 #   ATmega328P   USBasp
-BOOTLOADER = DFU
+BOOTLOADER = atmel-dfu
 
 # Build Options
 #   comment out to disable the options.
